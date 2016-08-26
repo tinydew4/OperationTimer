@@ -1,0 +1,45 @@
+object fmMain: TfmMain
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'OpTime'
+  ClientHeight = 70
+  ClientWidth = 400
+  Color = clBtnFace
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  ScreenSnap = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PnTimer: TPanel
+    Left = 0
+    Top = 0
+    Width = 400
+    Height = 70
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'PnTimer'
+    Color = clNavy
+    DoubleBuffered = True
+    Font.Charset = HANGEUL_CHARSET
+    Font.Color = clWhite
+    Font.Height = -48
+    Font.Name = #44404#47548#52404
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentDoubleBuffered = False
+    ParentFont = False
+    TabOrder = 0
+    OnMouseDown = PnTimerMouseDown
+  end
+  object Timer: TTimer
+    OnTimer = TimerTimer
+    Left = 8
+    Top = 8
+  end
+end
